@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professor Lucas - JS</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Cadastro de Cliente</h1>
+      <form id="cadastroForm">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required />
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+    
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required />
+    
+        <label>Gênero:</label>
+        <div class="radio-group">
+          <input type="radio" id="masculino" name="genero" value="masculino" required />
+          <label for="masculino">Masculino</label>
+          <input type="radio" id="feminino" name="genero" value="feminino" />
+          <label for="feminino">Feminino</label>
+          <input type="radio" id="outro" name="genero" value="outro" />
+          <label for="outro">Outro</label>
+        </div>
+    
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+          <option value="brasil">Brasil</option>
+          <option value="eua">Estados Unidos</option>
+          <option value="canada">Canadá</option>
+        </select>
+    
+        <label for="carro-interesse">Carro de Interesse:</label>
+        <select id="carro-interesse" name="carro-interesse" required>
+          <option value="">Selecione um modelo</option>
+          <option value="sedan">Sedan</option>
+          <option value="suv">SUV</option>
+          <option value="hatch">Hatch</option>
+          <option value="picape">Picape</option>
+        </select>
+    
+        <label for="ano-carro">Ano do Carro de Interesse:</label>
+        <input type="number" id="ano-carro" name="ano-carro" min="2000" max="2024" placeholder="Ex: 2022" required />
+    
+        <button type="submit">Enviar Cadastro</button>
+      </form>
+    </div>
+    
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
